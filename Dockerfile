@@ -2,7 +2,7 @@
 FROM java:8-alpine
 VOLUME /opt/egbtm
 #ADD data /
-COPY target/petclinic.war /apm-app/
+COPY petclinic.war /apm-app/
 
 WORKDIR /apm-app
 
