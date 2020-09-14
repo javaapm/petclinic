@@ -1,0 +1,15 @@
+version: '3'
+services:
+    petclinic:
+        image: egapm/petclinic:pc-latest
+        build:
+            context: ../
+        container_name: petclinic
+        ports:
+        - "8080:8080"
+        networks:
+        - testnet
+
+networks:
+  testnet:
+
